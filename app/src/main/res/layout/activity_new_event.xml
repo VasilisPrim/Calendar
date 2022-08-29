@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewEvent"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/event_title"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/event_description"
+        android:ems="10"
+        android:hint="Όνομα Γεγονότος"
+        android:padding="5dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="293dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/event_description"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Περιγραφή"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+
+        />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:text="Αποθήκευση"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteNew_btn"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        android:background="@drawable/btns_for_events"
+        />
+
+    <Button
+        android:id="@+id/deleteNew_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:text="Διαγραφή"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/return_btn"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        android:background="@drawable/btns_for_events"/>
+
+    <Button
+        android:id="@+id/return_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:text="Επιστροφή"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        android:background="@drawable/btns_for_events"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/event_description"
+        android:ems="10"
+        android:hint="Ημ/νια- dd/mm/yyyy HH:mm"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
